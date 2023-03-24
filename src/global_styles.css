@@ -85,7 +85,7 @@ body {
 }
 .pv {
   height: 720px;
-  background: url('https://github.com/willy90510/github2/blob/43bec4d40497c8698db14f8be9daaeac3cad3893/src/assets/%E7%A8%8B%E5%BC%8F%E7%A2%BC%E9%9B%A8.gif')
+  background: url('https://raw.githubusercontent.com/willy90510/test/master/src/assets/%E7%A8%8B%E5%BC%8F%E7%A2%BC%E9%9B%A8.gif')
     no-repeat center bottom;
   /*background-position: cover;*/
   background-size: cover;
@@ -142,7 +142,6 @@ body {
   left: 5%;
   top: 10px;
   position: absolute;
-  line-height: 10px;
 }
 .birthday {
   /*來自哪邊*/
