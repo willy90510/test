@@ -9,7 +9,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <app-root></app-root>
     <div class="warp">
       <a name="a1" id="a1"></a>
       <div class="container">
@@ -41,8 +40,7 @@
         <div class="Bodyover">
           <div class="Body1">
             <div class="Body1-1">
-              <div class="pv">
-              </div>
+              <div class="pv"></div>
             </div>
             <a name="a2" id="a2"></a>
           </div>
@@ -50,32 +48,41 @@
             <div class="Body2-2">
               <div class="Body2-1">
                 <div>
-                  <img  class="photo" src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/self001.jpg" alt="picture">
+                  <img
+                    class="photo"
+                    src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/self001.jpg"
+                    alt="picture"
+                  />
                 </div>
                 <div class="selfsay">
                   <h1>自我介紹:</h1>
                   <div style="line-height: 150%; border: 1px">
                     <h3>
                       <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;我名叫洪祥維，今年即將畢業於長榮大學資工系，擅長Python與Android studio。
+                        &nbsp;&nbsp;&nbsp;&nbsp;我名叫洪祥維，今年即將畢業於長榮大學資工系，擅長Python與Android
+                        studio。
                       </p>
                       <p>
                         在學校，大一的我是桌球社社員，大二曾擔任過班上的總務股長。
                       </p>
                       <p>
-                        過去我在大一、大二的寒暑假時去到金門當地的建築公司打工，打工期間累積了不少土木相關知識和程式操作的技能，比如:Auto CAD,Excel和 Movavi Video等操作，並且為公司製作介紹工程材料的短影片給股東們介紹，獲得到不少好評。
+                        過去我在大一、大二的寒暑假時去到金門當地的建築公司打工，打工期間累積了不少土木相關知識和程式操作的技能，比如:Auto
+                        CAD,Excel和 Movavi
+                        Video等操作，並且為公司製作介紹工程材料的短影片給股東們介紹，獲得到不少好評。
                       </p>
                       <p>
                         第一次接觸網頁前端是大學二年級在課程當中學到,並且最後有製作出一個簡單小成品。
                       </p>
                       <p>
-                        第一次接觸Android studio也是在大學二年級在課程當中學到，後續也有製作些許簡單小成品。
+                        第一次接觸Android
+                        studio也是在大學二年級在課程當中學到，後續也有製作些許簡單小成品。
                       </p>
                       <p>
                         在大四上學時，接觸Line機器人，並為了兩座廟宇製造Line機器人負責解其籤詩。
                       </p>
                       <p>
-                        在就學期間除了學習了資訊工程相關技能，還學習了Maya建模、使用Unity製作遊戲和Photo Shope技術外加Adobe Illustrator美工。
+                        在就學期間除了學習了資訊工程相關技能，還學習了Maya建模、使用Unity製作遊戲和Photo
+                        Shope技術外加Adobe Illustrator美工。
                       </p>
                       <p>
                         並且，還學習了操做Arduino去使用ESP32-CAM、基礎模板和ESP32添加其他附加模組
@@ -88,7 +95,11 @@
                   <div class="section text-h-center text-v-center">
                     <p>關於我：</p>
                     <div
-                      style="line-height: 150%; font-size: 2%; border: 1px #ccc solid;"
+                      style="
+                        line-height: 150%;
+                        font-size: 2%;
+                        border: 1px #ccc solid;
+                      "
                     >
                       <br />
                       <p>喜歡挑戰，不怕吃苦</p>
@@ -112,92 +123,117 @@
               </div>
             </div>
           </div>
-          <div class="Body3"><a name="a3" id="a3"></a>
-           
-
-            
-        </div>
-        <div class="Body4">
-          <a name="a4" id="a4"></a>
-          <div class="Body4-1">
-            <div class="Body4-2-1">
-              <img
-                src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/%E6%A5%B5%E6%A8%82%E6%AE%BF.png"
-                alt="no"
-                title="極樂殿"
-                width="100%"
-                height="60%">
-              <div class="Body4-2-1-1">
-                <h1><a style="color: white">極樂殿</a></h1>
-                <br />
-                <h1><a style="color: white">LINE機器人</a></h1>
+          <div class="Body3">
+            <a name="a3" id="a3"></a>
+            <div class="Body3-men">
+              <ul class="nav nav-pills">
+                <li
+                  style="letter-spacing: 1.5em; font-size: 100%"
+                  [class.active]="viewMode=='map'"
+                >
+                  <a (click)="viewMode='map'">Map View</a>
+                </li>
+                <li
+                  style="letter-spacing: 1.5em; font-size: 100%"
+                  [class.active]="viewMode=='list'"
+                >
+                  <a (click)="viewMode='list'">List View</a>
+                </li>
+              </ul>
+            </div>
+            <div class="Body3-write">
+              <div [ngSwitch]="viewMode">
+                <div *ngSwitchCase="'map'">Map View Content</div>
+                <div *ngSwitchCase="'list'">List View Content</div>
+                <div *ngSwitchDefault>Otherwise</div>
               </div>
+              <h1><a style="color: White">1</a></h1>
             </div>
-            <div class="Body4-2-2">
-              <img
-                src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/%E5%8D%97%E5%A4%A9%E7%8D%85%E9%A0%AD%E5%B1%B1.png"
-                alt="no"
-                title="南天獅頭山"
-                width="100%"
-                height="60%">
-              <div class="Body4-2-2-1">
-                <h1><a style="color: white">獅頭山南天宮</a></h1>
-                <br />
-                <h1><a style="color: white">LINE機器人</a></h1>
+          </div>
+          <div class="Body4">
+            <a name="a4" id="a4"></a>
+            <div class="Body4-1">
+              <div class="Body4-2-1">
+                <img
+                  src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/%E6%A5%B5%E6%A8%82%E6%AE%BF.png"
+                  alt="no"
+                  title="極樂殿"
+                  width="100%"
+                  height="60%"
+                />
+                <div class="Body4-2-1-1">
+                  <h1><a style="color: white">極樂殿</a></h1>
+                  <br />
+                  <h1><a style="color: white">LINE機器人</a></h1>
+                </div>
               </div>
+              <div class="Body4-2-2">
+                <img
+                  src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/%E5%8D%97%E5%A4%A9%E7%8D%85%E9%A0%AD%E5%B1%B1.png"
+                  alt="no"
+                  title="南天獅頭山"
+                  width="100%"
+                  height="60%"
+                />
+                <div class="Body4-2-2-1">
+                  <h1><a style="color: white">獅頭山南天宮</a></h1>
+                  <br />
+                  <h1><a style="color: white">LINE機器人</a></h1>
+                </div>
+              </div>
+              <div class="peoplenumber">
+                <a style="color: black">參訪人數:</a
+                ><a title="计数器"
+                  ><img
+                    src="http://www.web-counter.net/count_20091204.php?c=ani6ymgWfHJ"
+                    style="border: 0; padding: 0; margin: 0"
+                    alt="计数器" /></a
+                ><br />
+              </div>
+              <div class="mtime"></div>
             </div>
-            <div class="peoplenumber">
-              <a style="color: black">參訪人數:</a
-              ><a title="计数器"
-                ><img
-                  src="http://www.web-counter.net/count_20091204.php?c=ani6ymgWfHJ"
-                  style="border: 0; padding: 0; margin: 0"
-                  alt="计数器" ></a
-              ><br />
+          </div>
+          <div class="end">
+            <a name="a5" id="a5"></a>
+            <div class="call">
+              <p>
+                <img
+                  src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/phone.png"
+                  width="25px"
+                  height="20px"
+                /><a style="color: White">聯絡電話:</a>
+              </p>
+              <p><a style="color: White">&nbsp;&nbsp;0981974898</a></p>
             </div>
-            <div class="mtime"></div>
-          </div>
-        </div>
-        <div class="end">
-          <a name="a5" id="a5"></a>
-          <div class="call">
-            <p>
-              <img
-                src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/phone.png"
-                width="25px"
-                height="20px"
-              /><a style="color: White">聯絡電話:</a>
-            </p>
-            <p><a style="color: White">&nbsp;&nbsp;0981974898</a></p>
-          </div>
-          <div class="call1">
-            <p>
-              <a
-                href="https://www.facebook.com/profile.php?id=100006870456556"
-                style="color: white"
-                ><img
-                  src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/fb.png"
-                  width="25px"
-                  height="25px"
-                />FaseBook</a
-              >
-            </p>
-          </div>
-          <div class="call2">
-            <p>
-              <a
-                href="https://www.youtube.com/channel/UCxOBrAmY_sbqeOTlecWn_hw"
-                style="color: white"
-                ><img
-                  src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/yt.png"
-                  width="25px"
-                  height="25px"
-                />You Tube</a
-              >
-            </p>
-          </div>
-          <div class="Footer">
-            <p><a style="color: White">©版權所有，翻印必研究</a></p>
+            <div class="call1">
+              <p>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100006870456556"
+                  style="color: white"
+                  ><img
+                    src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/fb.png"
+                    width="25px"
+                    height="25px"
+                  />FaseBook</a
+                >
+              </p>
+            </div>
+            <div class="call2">
+              <p>
+                <a
+                  href="https://www.youtube.com/channel/UCxOBrAmY_sbqeOTlecWn_hw"
+                  style="color: white"
+                  ><img
+                    src="https://raw.githubusercontent.com/willy90510/test/master/src/assets/yt.png"
+                    width="25px"
+                    height="25px"
+                  />You Tube</a
+                >
+              </p>
+            </div>
+            <div class="Footer">
+              <p><a style="color: White">©版權所有，翻印必研究</a></p>
+            </div>
           </div>
         </div>
       </div>

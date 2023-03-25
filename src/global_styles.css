@@ -220,38 +220,21 @@ body {
   margin: 0px;
   background: rgb(218, 217, 217);
 }
-/*.Body3:hover .Body3-2{
-  /*transform: translate(0%, 0%);
-  transition: transform 0.2s ease;*/
-/*display: block;   
-}
-.Body3-2{
-  /*transform: translate(0%, -2000PX);
-  transition: transform 0.2s ease;*/
-/*display: none;
-}*/
-.Body3-1 {
-  position: relative;
-  /*justify-content: center; /*物件水平置中*/
-  /*align-items: center;/*物件垂直置中*/
-  /*display: flex; /*物件定義為彈性*/
-}
+
 .Body3-men {
   width: 0 auto;
   height: 0 auto;
   position: absolute;
-  left: 6.5%; /*28%*/
+  left: 6.5%;
   top: 50px;
-  background: rgb(218, 217, 217);
 }
 .Body3-write {
   width: 80%;
   height: 500px;
-  position: absolute;
+  position: relative;
   left: 10%;
   top: 100px;
   background: rgb(132, 130, 130);
-  /*overflow: scroll;*/
 }
 .Body4 {
   /*作品*/
@@ -356,42 +339,7 @@ body {
   top: 150px;
   background: black;
 }
-/*.mt{
-  width: 1px;
-height: 75%;
-  position: absolute;
-  left:50%;
-  top: 15px;
-background:white;
-}
-.change{
-  width: 0 auto;
-height: 50px;
-  position: absolute;
-  left:53%;
-  top: 20px;
-}
-.change1{
-  width: 0 auto;
-height: 50px;
-  position: absolute;
-  left:53%;
-  top: 60px;
-}
-.change2{
-  width: 0 auto;
-height: 50px;
-  position: absolute;
-  left:53%;
-  top: 110px;
-}
-.change3{
-  width: 0 auto;
-height: 50px;
-  position: absolute;
-  left:53%;
-  top: 160px;
-}*/
+
 .Footer {
   width: 250px;
   height: 50px;
@@ -592,3 +540,6 @@ h4 {
 /*.mat-tab-header{
   background-color: #f8f0f0;
 }*/
+.mat-tab-group {
+  margin-bottom: 100px;
+}
